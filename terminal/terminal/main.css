@@ -1,0 +1,175 @@
+::selection {
+    background: #57C3B6;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-size: 13pt;
+    font-family: monospace;
+    color: white;
+    background-color: black;
+}
+
+#container {
+    padding: .1em 1.5em 1em 1em;
+    margin-left: 50px;
+    margin-right: 135px;
+}
+
+#cmdline {
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    border: none;
+    color: inherit;
+    padding: 0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+}
+
+#cmdline::-ms-clear {
+    display: none;
+}
+
+#output {
+    clear: both;
+    width: 100%;
+}
+
+#prompt {
+    white-space: nowrap;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.green {
+    color: #009b64;
+}
+
+.input-line {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+#githubImg img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 0;
+}
+
+/* SIDE NAV */
+
+#sidenavBtn {
+    position: absolute !important;
+    padding: 2px !important;
+    top: 0 !important;
+    right: 7px !important;
+    font-size: 35px !important;
+}
+
+#sidenav {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background-color: #009b64;
+    opacity: 0.8;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+#sidenav img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+#sidenav img:focus {
+    outline: none;
+}
+
+#sidenav button {
+    padding: 8px 8px 8px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    background: none !important;
+    border: none;
+}
+
+@media screen and (max-height: 450px) {
+    body {
+        font-size: 11pt;
+    }
+    #sidenav {
+        padding-top: 15px;
+    }
+    #sidenav a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #githubImg img {
+        transform: translateX(900px);
+    }
+    #container {
+        margin-right: 0;
+    }
+    a:focus, button:focus, button {
+        outline: 0;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    #sidenav button:hover {
+        color: #004f32;
+    }
+}

@@ -1,0 +1,74 @@
+body, html {
+    background-color: #000;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.anchor:focus {
+    outline: none;
+}
+
+#images {
+    z-index: 9999;
+    width: 100vw;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+#images img {
+    width: 64px;
+    height: 64px;
+    margin: 32px 32px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#name {
+    width: 100vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+    user-select: none;
+    font-family: monospace;
+    color: #009b64;
+    font-weight: 700;
+    font-size: 4vw;
+    z-index: 9999;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 720px) {
+    #images img {
+        width: 32;
+        height: 32;
+        margin: 16px 16px;
+    }
+    #name {
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    #images img:hover {
+        opacity: 0.5;
+    }
+}
