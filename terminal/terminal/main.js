@@ -20,40 +20,69 @@ var configs = (function () {
         }
     };
     Singleton.defaultOptions = {
-        general_help: isUserPT ? "Em baixo consta uma lista com todos os comandos possíveis de utilizar.\nÉ possível recorrer ao auto-preenchimento recorrendo à tecla TAB que por sua vez autocompleta se apenas existir 1 possibilidade, ou apresenta uma lista com todas as possibilidades caso contrário." : "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
-        ls_help: isUserPT ? "Apresenta informação relativamente a todos os ficheiros e pastas (presentes no diretório atual)." : "List information about the files and folders (the current directory by default).",
-        cat_help: isUserPT ? "Lê FICHEIRO(s) e imprime o seu conteúdo no dispositivo de output standard (ecrã)." : "Read FILE(s) content and print it to the standard output (screen).",
-        whoami_help: isUserPT ? "Apresenta o nome do utilizador associado ao ID do utilizador atual e alguma informação complementar." : "Print the user name associated with the current effective user ID and more info.",
-        date_help: isUserPT ? "Apresenta a data e hora do sistema." : "Print the system date and time.",
-        help_help: isUserPT ? "Apresenta este menu." : "Print this menu.",
-        clear_help: isUserPT ? "Limpa o ecrã do terminal." : "Clear the terminal screen.",
-        reboot_help: isUserPT ? "Reinicia o sistema." : "Reboot the system.",
-        cd_help: isUserPT ? "Altera o diretório atual." : "Change the current working directory.",
-        mv_help: isUserPT ? "Move (renomeia) ficheiros." : "Move (rename) files.",
-        rm_help: isUserPT ? "Remove ficheiros ou diretórios." : "Remove files or directories.",
-        rmdir_help: isUserPT ? "Remove um diretório, funcionando somente se as pastas estiverem vazias." : "Remove directory, this command will only work if the folders are empty.",
-        touch_help: isUserPT ? "Altera os timestamps de um ficheiro. Caso o ficheiro não exista, é criado um vazio." : "Change file timestamps. If the file doesn't exist, it's created an empty one.",
-        sudo_help: isUserPT ? "Executa um comando com direitos de superutilizador." : "Execute a command as the superuser.",
-        welcome: isUserPT ? "Bem-vind@ ao meu website pessoal! :)\nO meu nome é Luís Bragança, sou Engenheiro de Software e um full-stack developer web e mobile.\nAtualmente, sou estudante de Mestrado em Engenharia de Software no Instituto Politecnico de Setúbal.\nProfissionalmente, sou um software developer na Cast, Lda.\nVamos dar início: Pode executar o comando 'help' ou usar o menu verde mais intuitivo que se encontra à sua esquerda.\nPara ignorar o texto corrido prima/clique duas vezes em qualquer local na página." : "Welcome to my personal website! :)\nMy name is Luís Bragança, I'm a Software Engineer and a full-stack web and mobile developer.\nCurrently, I'm a Master's student in Software Engineering in the Polytechnic Institute of Setúbal.\nCarrer-wise, I'm a software developer in Cast, Lda.\nNow in order to get started, feel free to either execute the 'help' command or use the more user-friendly green sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.",
-        internet_explorer_warning: isUserPT ? "NOTA: Acontece que se encontra a usar o internet explorer, este website não funcionará correctamente uma vez que o seu suporte não é garantido." : "NOTE: I see you're using internet explorer, this website won't work properly.",
-        welcome_file_name: isUserPT ? "mensagem_boas_vindas.txt" : "welcome_message.txt",
-        invalid_command_message: "<value>: " + (isUserPT ? "comando não encontrado." : "command not found."),
-        reboot_message: isUserPT ? "A preparar para reiniciar...\n\n3...\n\n2...\n\n1...\n\nA reiniciar...\n\n" : "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
-        permission_denied_message: isUserPT ? "Não foi foi possível executar '<value>', permissão negada." : "Unable to '<value>', permission denied.",
-        sudo_message: isUserPT ? "Não é possível recorrer ao sudo através de um cliente web." : "Unable to sudo using a web client.",
-        usage: isUserPT ? "Modo de utilização" : "Usage",
-        file: isUserPT ? "ficheiro" : "file",
-        file_not_found: isUserPT ? "Ficheiro '<value>' não encontrado." : "File '<value>' not found.",
-        username: isUserPT ? "Nome de utilizador" : "Username",
-        hostname: isUserPT ? "Nome do host" : "Host",
-        platform: isUserPT ? "Plataforma" : "Platform",
-        accesible_cores: isUserPT ? "Núcleos acessíveis" : "Accessible cores",
-        language: isUserPT ? "Idioma" : "Language",
+        general_help: "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
+        ls_help: "List information about the files and folders (the current directory by default).",
+        cat_help: "Read FILE(s) content and print it to the standard output (screen).",
+        whoami_help: "Print the user name associated with the current effective user ID and more info.",
+        date_help: "Print the system date and time.",
+        help_help: "Print this menu.",
+        clear_help: "Clear the terminal screen.",
+        reboot_help: "Reboot the system.",
+        cd_help: "Change the current working directory.",
+        mv_help: "Move (rename) files.",
+        rm_help: "Remove files or directories.",
+        rmdir_help: "Remove directory, this command will only work if the folders are empty.",
+        touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
+        sudo_help: "Execute a command as the superuser.",
+        welcome: "::::::;;:::;;;;;;;;;;;;;;;;;;;;;;;::::::\n\
+        ;;;;;;;;,,'''''''''''''''''''',,;;;:::::\n\
+        ;;;;;,,''''''''''''''''''''''''',,;;;:::\n\
+        ;;;;,,'''''''''''''',,'',,,,,,,,,,,,;;::\n\
+        ;;;,,'.'',,,;:cc:ccccccc:::;;;,,,,,,;;::\n\
+        ;;,,'.',;:clloddddxxxxxxddoollc;,,,,;;::\n\
+        ;;;,'',:lloddxxxxxkkkkkkxxxxxxdl;,,,,;::\n\
+        ;;;,'';clooddxxxxkkkkkkkkkxxxxxoc;,,;;;:\n\
+        ;;;,'';cloooooddxxxxxxxxxdxxxxxdl:;,;;::\n\
+        ;;,,',:llllooooooddddddodddddxxxdl;,;:::\n\
+        ;,;,,;clllllllllooddddolllooddxxxo::clc:\n\
+        ,,;;;;:clllcccllloooooolccloddxxxoclddl:\n\
+        ,,,;;;:coooooooooodddddddddxxxkkxdoodoc:\n\
+        ,,,;;::cloddddddddxxdddxxxxkkkkkkxxddlc:\n\
+        ,,,,;:cllodxxxxdooddooodxkkkkkkkkkxdl:::\n\
+        ,,,,,;:clodddxddolooooddxkkkxxkkxolc::::\n\
+        ,,,,,,,;clooodddddddddxxxxxxxxxdl::;::::\n\
+        ,,,,,,,,;cloooolllooooooddxxxdolc:::::;:\n\
+        ,,,,,,,,,;:cooooooodddddddxddol:::::::;:\n\
+        ,,,,,,,,,,;:cloooddxxxxxxddoolc;:lc::;;:\n\
+        ,,,,,,,,;:cc::cclooodddoooolllc::looc:::\n\
+        ,,,,,,,;codo:;:ccccllllllloollc::ldxdoc:\n\n\n\n\
+        Welcome to hazelnutsgz(榛子)'s website! :)\nHis name is Guozhen She(佘国榛), a real(at least try to be) CS guy from Fudan university supervised by Prof Yang Chen.\n\
+        Career-wise, She is an apprentice at System ant Network Group in Microsoft Research Asia.\n\
+        Before Microsoft, She was a software intern(dabbler) on OpenStack at Intel Open Source Technology Center.\n\
+        Long long ago, She worked as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
+        As a 'student', She is equipped with neither decent GPA(only 3.55) nor fruitful publications(zero first-author pub), \n\
+        and even suspended from school for one semester because of the surgery.\n\n\
+        She's research interest resides in the intersection(corner) of HCI, System(in a naive manner), Security(system-based), PL(no hands-on), Magic(machine learning)\n\n\
+        If you still want to know more about this guy, feel free to either execute the 'help' command or use the more user-friendly sidenav at the left side. \n", 
+        internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
+        welcome_file_name: "welcome_message.txt",
+        invalid_command_message: "<value>: " + "command not found.",
+        reboot_message: "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
+        permission_denied_message: "Unable to '<value>', permission denied.",
+        sudo_message: "Unable to sudo using a web client.",
+        usage: "Usage",
+        file: "file",
+        file_not_found: "File '<value>' not found.",
+        username: "Username",
+        hostname: "Host",
+        platform: "Platform",
+        accesible_cores: "Accessible cores",
+        language: "Language",
         value_token: "<value>",
-        host: "lbraganca.pt",
-        user: "guest",
+        host: "sgzhazelnut.github.io",
+        user: "someone",
         is_root: false,
-        type_delay: 20
+        type_delay: 1
     };
     return {
         getInstance: function (options) {
@@ -72,13 +101,22 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {};
-    Singleton.defaultOptions[(isUserPT ? "sobre.txt" : "about.txt")] = isUserPT ? "Este website foi elaborado usando somente JavaScript puro sem recorrer a bibliotecas.\nFoi feito de forma genérica permitindo assim que qualquer pessoa o use, bastando para isso apenas realizar o download do GitHub e alterar os textos de configuração de acordo com as suas necessidades.\nSe encontrar algum bug ou vulnerabilidade peço que me contacte para: luisbraganca@protonmail.com" : "This website was made using only pure JavaScript with no extra libraries.\nI made it dynamic so anyone can use it, just download it from GitHub and change the config text according to your needs.\nIf you manage to find any bugs or security issues feel free to email me: luisbraganca@protonmail.com";
-    Singleton.defaultOptions[(isUserPT ? "interesses.txt" : "interests.txt")] = isUserPT ? "Os meus interesses passam principalmente por:\n- Java\n- Node.js\n- React (e React Native)\n- Android\n- Engenharia de Software\n- Common Lisp\n- Segurança\nE muito mais.\nNo entanto, ainda assim tenho competências em ASP.NET, SQL e UML.\nPessoalmente, acredito que mais importante do que saber o 'como', é saber o 'porquê'." : "My interests are mostly:\n- Java\n- Node.js\n- React (and React Native)\n- Android\n- Software Engineering\n- Common Lisp\n- Security\nAnd a lot more.\nHowever, I also have skills in ASP.NET, SQL and UML.\nI believe that more important than knowing 'how' it works, is knowing 'why' it works.";
-    Singleton.defaultOptions[(isUserPT ? "educação.txt" : "academic_info.txt")] = isUserPT ? "2017, Instituto Politécnico de Setúbal, Mestrado em Engenharia de Software\nUnidades curriculares principais:\n- Programação Avançada para a Internet\n- Qualidade de Software\n- Segurança de Informação e de Software\n- Análise de Dados\n- Visualização de Informação\n- Marketing Digital\n- Extração Automática de Informação\n2013, Instituto Politécnico de Setúbal, Licenciatura em Engenharia Informática\nUnidades curriculares principais:\n- Engenharia de Software\n- Inteligência Artificial\n- Programação Para a Internet\n- Programação Orientada por Objetos\n- Programação Avançada\n- Computação Móvel\n- Computação Distribuída\n- Bases de Dados\n- Sistemas Operativos\n- Redes de Computadores" : "2017, Polytechnic Institute of Setúbal, Master's degree in Software Engineering\nMain subjects:\n- Advanced Internet Computing\n- Software Quality\n- Information and Software Security\n- Data Analysis\n- Information Visualization\n- Digital Marketing\n- Automated Information Extraction\n2013, Polytechnic Institute of Setúbal, Licentiate degree in Informatics Engineering\nMain subjects:\n- Software Engineering\n- Artificial Intelligence\n- Internet Computing\n- Object Oriented Programming\n- Advanced Programming\n- Mobile Computing\n- Distributed Computing\n- Databases\n- Operating Systems\n- Computer Networks";
-    Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/hazelnutsgz/";
-    Singleton.defaultOptions["github.txt"] = "https://github.com/hazelnutsgz/";
-    Singleton.defaultOptions[(isUserPT ? "outras_informações.txt" : "other_info.txt")] = isUserPT ? "Sou um músico com competências em composição e produção musical, usando ferramentas tais como:\n- Fruity Loops Studio\n- REAPER Digital Audio Workstation\n- Magnus Choir\n - Edirol Orchestral.\nTive 5 anos de aulas de teoria musical e sei tocar:\n- Baixo elétrico (instrumento principal)\n- Guitarra elétrica\n- Guitarra acústica\n- Bateria\n- Teclado" : "I'm a musician with both producing and composing skills using tools such as:\n- Fruity Loops Studio\n- REAPER Digital Audio Workstation\n- Magnus Choir\n- Edirol Orchestral.\nHad 5 years of musical theory lessons and I know how to play:\n- Electric bass (main instrument)\n- Electric guitar\n- Classical guitar\n- Drums\n- Keyboard";
-    Singleton.defaultOptions[(isUserPT ? "contacto.txt" : "contact.txt")] = "luisbraganca@protonmail.com";
+    Singleton.defaultOptions["github.txt"] = "https://github.com/hazelnutsgz";
+    Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/hazelnutsgz/"
+    Singleton.defaultOptions["resume.pdf"] = "In the pdf format, please check https://sgzhazelnut.github.io/CV/GuozhenShe.pdf"
+    Singleton.defaultOptions[(isUserPT ? "sobre.txt" : "interests.txt")] = "Archeology (on Computer Science), Soccer(DM), Road Cycling(ITT)";
+    Singleton.defaultOptions[(isUserPT ? "LLL" : "courses.txt")] = "\
+    Fudan University, Shanghai, China\t\t\t2015.9-Present\n\
+    Bachelor of Computer Science (expected in 07.2020, one year delay because of a surgery) \n\
+    GPA (overall): 3.55/4.0; Ranking: 21/117 \n\
+    Body :Computer Architecture(A)| Computer Network(A-)|Computer System(A)|Database Implementation(A-)|Operating System(B+)\n\
+    Brain: Data Structure(B+)|Distributed System(A)|Linear Algebra(A)\n\
+    Mouth:  C Programming(A)|C++ Programming(A-)|Web Development(A) \n\
+    Metaphysics: Neural Network and Deep Learning(A-)";
+    Singleton.defaultOptions[(isUserPT ? "L": "miscellany.txt")] = "\
+    PL: Python, Java, Golang, C, C++, JavaScript, MATLAB(wanderer), Rust(dabbler)\n\
+    Frmework & Library: Tornado(Python), D3.js(JS), Node.js(V8), System Call(C), Tensorflow, PyTorch\n";
+    
     return {
         getInstance: function (options) {
             instance === void 0 && (instance = new Singleton(options));
@@ -152,9 +190,9 @@ var main = (function () {
         if (!(sidenav instanceof Node) || sidenav.nodeName.toUpperCase() !== "DIV") {
             throw new InvalidArgumentException("Invalid value " + sidenav + " for argument 'sidenav'.");
         }
-        if (!(profilePic instanceof Node) || profilePic.nodeName.toUpperCase() !== "IMG") {
-            throw new InvalidArgumentException("Invalid value " + profilePic + " for argument 'profilePic'.");
-        }
+        // if (!(profilePic instanceof Node) || profilePic.nodeName.toUpperCase() !== "IMG") {
+        //     throw new InvalidArgumentException("Invalid value " + profilePic + " for argument 'profilePic'.");
+        // }
         (typeof user === "string" && typeof host === "string") && (this.completePrompt = user + "@" + host + ":~" + (root ? "#" : "$"));
         this.profilePic = profilePic;
         this.prompt = prompt;
