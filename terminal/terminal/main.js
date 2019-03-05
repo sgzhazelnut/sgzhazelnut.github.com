@@ -57,13 +57,13 @@ var configs = (function () {
         ,,,,,,,,;:cc::cclooodddoooolllc::looc:::\n\
         ,,,,,,,;codo:;:ccccllllllloollc::ldxdoc:\n\n\n\n\
         Welcome to hazelnutsgz(榛子)'s website! :)\nHis name is Guozhen She(佘国榛), a real(at least try to be) CS guy from Fudan university supervised by Prof Yang Chen.\n\
-        Career-wise, She is an apprentice at System ant Network Group in Microsoft Research Asia.\n\
-        Before Microsoft, She was a software intern(dabbler) on OpenStack at Intel Open Source Technology Center.\n\
+        Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia.\n\
+        Before that, She was a software intern(dabbler) on OpenStack at Intel Open Source Technology Center.\n\
         Long long ago, She worked as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
-        As a 'student', She is equipped with neither decent GPA(only 3.55) nor fruitful publications(zero first-author pub), \n\
+        As a 'student', She is equipped with neither decent GPA nor fruitful publications, \n\
         and even suspended from school for one semester because of the surgery.\n\n\
         She's research interest resides in the intersection(corner) of HCI, System(in a naive manner), Security(system-based), PL(no hands-on), Magic(machine learning)\n\n\
-        If you still want to know more about this guy, feel free to either execute the 'help' command or use the more user-friendly sidenav at the left side. \n", 
+        If you still want to know more about this guy, feel free to either execute the 'help' command or use the more user-friendly sidenav at the right side. \n", 
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: " + "command not found.",
@@ -115,7 +115,7 @@ var files = (function () {
     Metaphysics: Neural Network and Deep Learning(A-)";
     Singleton.defaultOptions[(isUserPT ? "L": "miscellany.txt")] = "\
     PL: Python, Java, Golang, C, C++, JavaScript, MATLAB(wanderer), Rust(dabbler)\n\
-    Frmework & Library: Tornado(Python), D3.js(JS), Node.js(V8), System Call(C), Tensorflow, PyTorch\n";
+    Framework & Library: Tornado(Python), D3.js(JS), Node.js(V8), System Call(C), Tensorflow, PyTorch\n";
     
     return {
         getInstance: function (options) {
