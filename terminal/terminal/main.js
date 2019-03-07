@@ -21,8 +21,8 @@ var configs = (function () {
     };
     Singleton.defaultOptions = {
         general_help: "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
+        cat_help: "Open an URL in a new tab, or print it to the standard output (screen)\n\n",
         ls_help: "List information about the files and folders (the current directory by default).",
-        cat_help: "Read FILE(s) content and print it to the standard output (screen).",
         whoami_help: "Print the user name associated with the current effective user ID and more info.",
         date_help: "Print the system date and time.",
         help_help: "Print this menu.",
@@ -60,10 +60,10 @@ var configs = (function () {
         Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia.\n\
         Before that, She was a software intern(dabbler) on OpenStack at Intel Open Source Technology Center.\n\
         Long long ago, She worked as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
-        As a 'student', She is equipped with neither decent GPA nor fruitful publications, \n\
+        As a 'student', She is equipped with neither decent GPA(3.55) nor fruitful publications(zero first-author pub), \n\
         and even suspended from school for one semester because of the surgery.\n\n\
-        She's research interest resides in the intersection(corner) of HCI, System(in a naive manner), Security(system-based), PL(no hands-on), Magic(machine learning)\n\n\
-        If you still want to know more about this guy, feel free to either execute the 'help' command or use the more user-friendly sidenav at the right side. \n", 
+        She's research interest resides in the intersection(periphery) of HCI, Distributed System(in a naive manner), Security(system-based), PL(out of curiosity), Magic(machine learning, he means)\n\n\
+        If you haven't be bothered with the tedious narration, feel free to either execute the 'help' command('cat' is always adorable for human being) or use the more user-friendly sidenav at the right side. \n", 
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: " + "command not found.",
