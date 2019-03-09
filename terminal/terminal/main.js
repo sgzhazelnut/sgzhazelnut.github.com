@@ -56,7 +56,7 @@ var configs = (function () {
         ,,,,,,,,,,;:cloooddxxxxxxddoolc;:lc::;;:\n\
         ,,,,,,,,;:cc::cclooodddoooolllc::looc:::\n\
         ,,,,,,,;codo:;:ccccllllllloollc::ldxdoc:\n\n\n\n\
-        Welcome to hazelnutsgz(榛子)'s website! :)\nHis name is Guozhen She(佘国榛), a real(at least try to be) CS guy from Fudan university supervised by Prof Yang Chen.\n\
+        Welcome to hazelnutsgz's website! :)\nHis name is Guozhen She, a real(at least try to be) CS guy from Fudan university supervised by Prof Yang Chen.\n\
         Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia.\n\
         Before that, She struggled with OpenStack at Intel Open Source Technology Center.\n\
         Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
