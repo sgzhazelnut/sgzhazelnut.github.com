@@ -60,7 +60,7 @@ var configs = (function () {
         Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia.\n\
         Before that, She struggled with OpenStack at Intel Open Source Technology Center.\n\
         Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
-        As a 'student', She is equipped with neither decent GPA(3.55) nor fruitful publications\n\
+        As a 'student', She is equipped with neither decent GPA(3.55, 17.9%) nor fruitful publications\n\
         (zero first-author pub), and even suspended from school for one semester because of the surgery.\n\n\
         She's interest resides in the intersection(periphery) of HCI, Distributed System(in a naive manner), \n\
         Security(system-wise), PL(out of curiosity), Magic(machine learning etc.)\n\n\
