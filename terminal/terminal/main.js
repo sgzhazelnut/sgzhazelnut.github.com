@@ -56,16 +56,11 @@ var configs = (function () {
         ,,,,,,,,,,;:cloooddxxxxxxddoolc;:lc::;;:\n\
         ,,,,,,,,;:cc::cclooodddoooolllc::looc:::\n\
         ,,,,,,,;codo:;:ccccllllllloollc::ldxdoc:\n\n\n\n\
-        Welcome to hazelnutsgz's website! :)\nHis name is Guozhen She, a real(at least try to be) CS guy from Fudan university supervised by Prof Yang Chen.\n\
-        Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia.\n\
-        Before that, She struggled with OpenStack at Intel Open Source Technology Center.\n\
-        Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
-        As a 'student', She is equipped with neither decent GPA(3.55, 17.9%) nor fruitful publications\n\
-        (zero first-author pub), and even suspended from school for one semester because of the surgery.\n\n\
-        She's interest resides in the intersection(periphery) of HCI, Distributed System(in a naive manner), \n\
-        Security(system-wise), PL(out of curiosity), Magic(machine learning etc.)\n\n\
-        If you haven't been bothered by the tedious narration by She, feel free to either execute the 'help'\n\
-        command('cat' is always adorable for human being) or use the more user-friendly sidenav at the right side. \n", 
+        Welcome to hazelnutsgz's website! :)\nHis name is Guozhen She, yet another CS guy from Fudan university supervised by Prof Yang Chen.\n\
+        Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia. Before that, She struggled with OpenStack at Intel Open Source Technology Center. Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
+        As a 'student', She is equipped with neither decent GPA(3.55, 17.9%) nor fruitful publications (zero first-author pub), and even suspended from school for one semester because of the surgery.\n\n\
+        She's interest resides in the intersection(periphery) of HCI, Distributed System(in a naive manner), Security(system-wise), PL(out of curiosity), Magic(machine learning etc.)\n\n\
+        If you haven't been bothered by the tedious narration by She, feel free to either execute the 'help' command('cat' is always adorable for human being) or use the more user-friendly sidenav at the left side.\n", 
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: " + "command not found.",

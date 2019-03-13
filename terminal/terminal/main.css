@@ -110,7 +110,7 @@ body {
     position: fixed;
     z-index: 9;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #009b64;
     opacity: 0.8;
     overflow-x: hidden;
