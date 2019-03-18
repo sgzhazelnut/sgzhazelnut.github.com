@@ -60,7 +60,7 @@ var configs = (function () {
         Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia. Before that, She struggled with OpenStack at Intel Open Source Technology Center. Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
         As a 'student', She is equipped with neither decent GPA(3.55, 17.9%) nor fruitful publications (zero first-author pub), and even suspended from school for one semester because of the surgery.\n\n\
         She's interest resides in the intersection(periphery) of HCI, Distributed System(in a naive manner), Security(system-wise), PL(out of curiosity), Magic(machine learning etc.)\n\n\
-        If you haven't been bothered by the tedious narration by She, feel free to either execute the 'help' command('cat' is always adorable for human being) or use the more user-friendly sidenav at the left side.\n", 
+        If you haven't been bothered by the tedious narration by She, feel free to either execute the 'help' command('cat' is always adorable for human being)\n", 
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: " + "command not found.",
@@ -175,7 +175,7 @@ var main = (function () {
     };
 
 
-    var Terminal = function (prompt, cmdLine, output, sidenav, profilePic, user, host, root, outputTimer) {
+    var Terminal = function (prompt, cmdLine, output, profilePic, user, host, root, outputTimer) {
         if (!(prompt instanceof Node) || prompt.nodeName.toUpperCase() !== "DIV") {
             throw new InvalidArgumentException("Invalid value " + prompt + " for argument 'prompt'.");
         }
@@ -185,9 +185,9 @@ var main = (function () {
         if (!(output instanceof Node) || output.nodeName.toUpperCase() !== "DIV") {
             throw new InvalidArgumentException("Invalid value " + output + " for argument 'output'.");
         }
-        if (!(sidenav instanceof Node) || sidenav.nodeName.toUpperCase() !== "DIV") {
-            throw new InvalidArgumentException("Invalid value " + sidenav + " for argument 'sidenav'.");
-        }
+        // if (!(sidenav instanceof Node) || sidenav.nodeName.toUpperCase() !== "DIV") {
+        //     throw new InvalidArgumentException("Invalid value " + sidenav + " for argument 'sidenav'.");
+        // }
         // if (!(profilePic instanceof Node) || profilePic.nodeName.toUpperCase() !== "IMG") {
         //     throw new InvalidArgumentException("Invalid value " + profilePic + " for argument 'profilePic'.");
         // }
@@ -196,9 +196,9 @@ var main = (function () {
         this.prompt = prompt;
         this.cmdLine = cmdLine;
         this.output = output;
-        this.sidenav = sidenav;
-        this.sidenavOpen = false;
-        this.sidenavElements = [];
+        // this.sidenav = sidenav;
+        // this.sidenavOpen = false;
+        // this.sidenavElements = [];
         this.typeSimulator = new TypeSimulator(outputTimer, output);
     };
 
@@ -214,20 +214,20 @@ var main = (function () {
     };
 
     Terminal.prototype.init = function () {
-        this.sidenav.addEventListener("click", ignoreEvent);
+        // this.sidenav.addEventListener("click", ignoreEvent);
         this.cmdLine.disabled = true;
-        this.sidenavElements.forEach(function (elem) {
-            elem.disabled = true;
-        });
+        // this.sidenavElements.forEach(function (elem) {
+        //     elem.disabled = true;
+        // });
         this.cmdLine.onfocusout = scrollToBottom;
-        this.prepareSideNav();
-        this.lock(); // Need to lock here since the sidenav elements were just added
-        document.body.addEventListener("click", function (event) {
-            if (this.sidenavOpen) {
-                this.handleSidenav(event);
-            }
-            this.focus();
-        }.bind(this));
+        // this.prepareSideNav();
+        // this.lock(); // Need to lock here since the sidenav elements were just added
+        // document.body.addEventListener("click", function (event) {
+        //     if (this.sidenavOpen) {
+        //         this.handleSidenav(event);
+        //     }
+        //     this.focus();
+        // }.bind(this));
         this.cmdLine.addEventListener("keydown", function (event) {
             if (event.which === 13 || event.keyCode === 13) {
                 this.handleCmd();
@@ -260,16 +260,15 @@ var main = (function () {
             var element = document.createElement("button");
             Terminal.makeElementDisappear(element);
             element.onclick = function (file, event) {
-                this.handleSidenav(event);
+                // this.handleSidenav(event);
                 this.cmdLine.value = "cat " + file + " ";
                 this.handleCmd();
             }.bind(this, file);
             element.appendChild(document.createTextNode(capFirst(file.replace(/\.[^/.]+$/, "").replace(/_/g, " "))));
-            this.sidenav.appendChild(element);
-            this.sidenavElements.push(element);
+            // this.sidenav.appendChild(element);
+            // this.sidenavElements.push(element);
         }
-        // Shouldn't use document.getElementById but Terminal is already using loads of params
-        document.getElementById("sidenavBtn").addEventListener("click", this.handleSidenav.bind(this));
+        // document.getElementById("sidenavBtn").addEventListener("click", this.handleSidenav.bind(this));
     };
 
     Terminal.prototype.handleSidenav = function (event) {
@@ -294,17 +293,17 @@ var main = (function () {
         this.exec();
         this.cmdLine.blur();
         this.cmdLine.disabled = true;
-        this.sidenavElements.forEach(function (elem) {
-            elem.disabled = true;
-        });
+        // this.sidenavElements.forEach(function (elem) {
+        //     elem.disabled = true;
+        // });
     };
 
     Terminal.prototype.unlock = function () {
         this.cmdLine.disabled = false;
         this.prompt.textContent = this.completePrompt;
-        this.sidenavElements.forEach(function (elem) {
-            elem.disabled = false;
-        });
+        // this.sidenavElements.forEach(function (elem) {
+        //     elem.disabled = false;
+        // });
         scrollToBottom();
         this.focus();
     };
@@ -521,7 +520,7 @@ var main = (function () {
                 document.getElementById("prompt"),
                 document.getElementById("cmdline"),
                 document.getElementById("output"),
-                document.getElementById("sidenav"),
+                // document.getElementById("sidenav"),
                 document.getElementById("profilePic"),
                 configs.getInstance().user,
                 configs.getInstance().host,
