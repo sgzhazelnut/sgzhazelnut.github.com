@@ -92,7 +92,30 @@ var files = (function () {
     PL: Python, Java, Golang, C, C++, JavaScript, MATLAB(wanderer), Rust(dabbler)\n\
     Framework & Library: Tornado(Python), D3.js(JS), Node.js(V8), System Call(C), Tensorflow, PyTorch\n\
     Soft Skills: Storytelling, Networking, Information Retrieval, Puns & Jokes, Open Source Engagement\n";
-    
+    Singleton.defaultOptions["avatar.txt"] = "\
+    ::::::;;:::;;;;;;;;;;;;;;;;;;;;;;;::::::\n\
+    ;;;;;;;;,,'''''''''''''''''''',,;;;:::::\n\
+    ;;;;;,,''''''''''''''''''''''''',,;;;:::\n\
+    ;;;;,,'''''''''''''',,'',,,,,,,,,,,,;;::\n\
+    ;;;,,'.'',,,;:cc:ccccccc:::;;;,,,,,,;;::\n\
+    ;;,,'.',;:clloddddxxxxxxddoollc;,,,,;;::\n\
+    ;;;,'',:lloddxxxxxkkkkkkxxxxxxdl;,,,,;::\n\
+    ;;;,'';clooddxxxxkkkkkkkkkxxxxxoc;,,;;;:\n\
+    ;;;,'';cloooooddxxxxxxxxxdxxxxxdl:;,;;::\n\
+    ;;,,',:llllooooooddddddodddddxxxdl;,;:::\n\
+    ;,;,,;clllllllllooddddolllooddxxxo::clc:\n\
+    ,,;;;;:clllcccllloooooolccloddxxxoclddl:\n\
+    ,,,;;;:coooooooooodddddddddxxxkkxdoodoc:\n\
+    ,,,;;::cloddddddddxxdddxxxxkkkkkkxxddlc:\n\
+    ,,,,;:cllodxxxxdooddooodxkkkkkkkkkxdl:::\n\
+    ,,,,,;:clodddxddolooooddxkkkxxkkxolc::::\n\
+    ,,,,,,,;clooodddddddddxxxxxxxxxdl::;::::\n\
+    ,,,,,,,,;cloooolllooooooddxxxdolc:::::;:\n\
+    ,,,,,,,,,;:cooooooodddddddxddol:::::::;:\n\
+    ,,,,,,,,,,;:cloooddxxxxxxddoolc;:lc::;;:\n\
+    ,,,,,,,,;:cc::cclooodddoooolllc::looc:::\n\
+    ,,,,,,,;codo:;:ccccllllllloollc::ldxdo";
+
     return {
         getInstance: function (options) {
             instance === void 0 && (instance = new Singleton(options));
