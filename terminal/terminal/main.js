@@ -38,7 +38,7 @@ var configs = (function () {
         Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia. Before that, She struggled with OpenStack at Intel Open Source Technology Center. Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
         As a 'student', She is equipped with neither decent GPA(3.55, 17.9%) nor fruitful publications (zero first-author pub), and even suspended from school for one semester because of the surgery.\n\n\
         She's interest resides in the intersection(periphery) of HCI, Distributed System(in a naive manner), Security(system-wise), PL(out of curiosity), Magic(machine learning etc.)\n\n\
-        If you haven't been bothered by the tedious narration by She, feel free to either execute the 'help' command('cat' is always adorable for human being)\n", 
+        If you haven't been bothered by the tedious narration by She, feel free to execute the 'help' command('cat' is always adorable for human being)\n", 
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: " + "command not found.",
@@ -79,8 +79,8 @@ var files = (function () {
     Singleton.defaultOptions["github.txt"] = "https://github.com/hazelnutsgz";
     Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/hazelnutsgz/"
     Singleton.defaultOptions["resume.pdf"] = "https://sgzhazelnut.github.io/CV/GuozhenShe.pdf"
-    Singleton.defaultOptions[(isUserPT ? "sobre.txt" : "interests.txt")] = "Archeology (on Computer Science), Soccer(DM), Road Cycling(Individual Time Trial, Mountain Climbing)\n";
-    Singleton.defaultOptions[(isUserPT ? "LLL" : "courses.txt")] = "\
+    Singleton.defaultOptions["interests.txt"] = "Archeology (on Computer Science), Soccer(DM), Road Cycling(Individual Time Trial, Mountain Climbing)\n";
+    Singleton.defaultOptions["courses.txt"] = "\
     Fudan University, Shanghai, China\t\t\t2015.9-Present\n\
     Bachelor of Computer Science (expected in 07.2020, one year delay because of a surgery) \n\
     GPA (overall): 3.55/4.0; Ranking: 21/117 \n\
@@ -88,7 +88,7 @@ var files = (function () {
     Brain: Data Structure(B+)|Distributed System(A)|Linear Algebra(A)\n\
     Mouth:  C Programming(A)|C++ Programming(A-)|Web Development(A) \n\
     Metaphysics: Neural Network and Deep Learning(A-)";
-    Singleton.defaultOptions[(isUserPT ? "L": "miscellany.txt")] = "\
+    Singleton.defaultOptions["miscellany.txt"] = "\
     PL: Python, Java, Golang, C, C++, JavaScript, MATLAB(wanderer), Rust(dabbler)\n\
     Framework & Library: Tornado(Python), D3.js(JS), Node.js(V8), System Call(C), Tensorflow, PyTorch\n\
     Soft Skills: Storytelling, Networking, Information Retrieval, Puns & Jokes, Open Source Engagement\n";
