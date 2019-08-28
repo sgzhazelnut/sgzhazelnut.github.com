@@ -79,6 +79,7 @@ var files = (function () {
     Singleton.defaultOptions["github.txt"] = "https://github.com/hazelnutsgz";
     Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/hazelnutsgz/"
     Singleton.defaultOptions["resume.pdf"] = "https://sgzhazelnut.github.io/CV/GuozhenShe.pdf"
+    Singleton.defaultOptions["pgp.txt"] = "https://sgzhazelnut.github.io/pgp.txt"
     Singleton.defaultOptions["interests.txt"] = "Archeology (on Computer Science), Soccer(DM), Road Cycling(Individual Time Trial, Mountain Climbing)\n";
     Singleton.defaultOptions["courses.txt"] = "\
     Fudan University, Shanghai, China\t\t\t2015.9-Present\n\
