@@ -34,11 +34,10 @@ var configs = (function () {
         rmdir_help: "Remove directory, this command will only work if the folders are empty.",
         touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
         sudo_help: "Execute a command as the superuser.",
-        welcome: "Welcome to hazelnutsgz's website! :)\nHis name is Guozhen She, yet another CS guy from Fudan university supervised by Prof Yang Chen.\n\n\
-        Career-wise, She is an apprentice at System and Network Group in Microsoft Research Asia. Before that, She struggled with OpenStack at Intel Open Source Technology Center. Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
-        As a 'student', She is equipped with neither decent GPA(3.55, 17.9%) nor fruitful publications (zero first-author pub), and even suspended from school for one semester because of the surgery.\n\n\
-        She's interest resides in the intersection(periphery) of HCI, Distributed System(in a naive manner), Security(system-wise), PL(out of curiosity), Magic(machine learning etc.)\n\n\
-        If you haven't been bothered by the tedious narration by She, feel free to execute the 'help' command('cat' is always adorable for human being)\n", 
+        welcome: "Welcome to hazelnutsgz's website! :)\nMy name is Guozhen She, yet another Computer Science student from Fudan university in China.\n\n\
+        Career-wise, I am an apprentice at System and Network Group in Microsoft Research Asia. Before that, I struggled with OpenStack and K8S at Intel Open Source Technology Center. Long long ago, She served as a (so-called) full-stack engineer at an e-commercial startup called ContextLogic(Wish)\n...........\n\n\n\
+        My interest resides in the intersection(periphery) of HCI, Security, Network, Magic(machine learning etc.)\n\n\
+        If you haven't been bothered by the tedious narration by me, feel free to execute the 'help' command('cat' is always adorable for human being)\n", 
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: " + "command not found.",
