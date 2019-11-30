@@ -1,0 +1,57 @@
+hazelnutsgz
+==================================================================
+https://keybase.io/hazelnutsgz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sgzhazelnut.github.io
+  * I am hazelnutsgz (https://keybase.io/hazelnutsgz) on keybase.
+  * I have a public key ASDcumyj39qOweOnJSPC2illDgGatvcANJkSk923UfQclAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120dcba6ca3dfda8ec1e3a72523c2da29650e019ab6f70034991293ddb751f41c940a",
+      "host": "keybase.io",
+      "kid": "0120dcba6ca3dfda8ec1e3a72523c2da29650e019ab6f70034991293ddb751f41c940a",
+      "uid": "94276260bfb77e54e94a6b1d5bec0219",
+      "username": "hazelnutsgz"
+    },
+    "merkle_root": {
+      "ctime": 1575093183,
+      "hash": "d3d03d2e05044e33073473e7e41000c1f1a5e6a159e269bbc7e7df89eb6be857d69163d5ec7448f58a921de9808cfabc4899c43fed324addee740fff6132846e",
+      "hash_meta": "7d9dccaa282dca1f4e62c81bbaa6da19ba6f9cff5cb4a81c678252515227e479",
+      "seqno": 11395194
+    },
+    "service": {
+      "entropy": "bKGFuvh4icCug/VzfNRN6K4i",
+      "hostname": "sgzhazelnut.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.5.0"
+  },
+  "ctime": 1575093200,
+  "expire_in": 504576000,
+  "prev": "448cdd35106f964524168d469ad6f670a8060de7e76a9ff9a57b9e2a7825d2f5",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3Lpso9/ajsHjpyUjwtopZQ4Bmrb3ADSZEpPdt1H0HJQKp3BheWxvYWTESpcCEMQgRIzdNRBvlkUkFo1Gmtb2cKgGDefnap/5pXueKngl0vXEINCyyHjPYqnpU0QPAjmC52DChJt7M0IbD7XeNMkHs5VDAgHCo3NpZ8RA/2DQEKlURlrQ0rp3/V8okzrFvrfwse+NXFXjkPrwASlY4jOMuaM4TRm+vGOphzynfE68NMsjZ23gU4VzJNMSDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIL4o+ApUt4v4tjlOnb30hR4Tnw7fLSI+oDck/ttQXsdfo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hazelnutsgz
+
+==================================================================
