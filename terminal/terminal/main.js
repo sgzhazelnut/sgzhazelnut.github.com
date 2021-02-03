@@ -34,8 +34,8 @@ var configs = (function () {
         rmdir_help: "Remove directory, this command will only work if the folders are empty.",
         touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
         sudo_help: "Execute a command as the superuser.",
-        welcome: "Welcome to hazelnutsgz's website! :)\nMy name is Guozhen She, yet another Computer Science student from Fudan university in China.\n\n\
-        feel free to execute the 'help' command('cat' is always adorable for human being)\n", 
+        welcome: "Welcome to hazelnutsgz's website! :)\nMy name is Guozhen She, yet another undergraduate student from Fudan university in China.\n\n\
+        Feel free to execute the 'help' command('cat' is always adorable for human being)\n", 
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: " + "command not found.",
